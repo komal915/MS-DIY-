@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    box-shadow: 0 0 10px black;
+    backdrop-filter: blur(10px);
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+
+}
+
+.navmenu a{
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: #ee1c47;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1,1);
+    color: #ee1c47;
+}
+
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    margin: 100px;
+}
+
+/* mobile view */
+@media only screen and (max-width: 600px) {
+    .products{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
+  }
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: auto;
+    height: 250px;
+    transition: all .40s;
+    border-radius: 15px;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    left: 210px;
+    font-size: 20px;
+}
+
+.heart-icon:hover{
+    color: #ee1c47;
+}
+
+.rating i{
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
